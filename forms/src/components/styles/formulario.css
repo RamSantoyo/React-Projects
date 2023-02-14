@@ -1,0 +1,126 @@
+.card-form{
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.input{
+    transition: all 0.3s ease;
+    display: block;
+    width: 18rem;
+    padding: 1rem 0 1rem 2rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.group{
+    /*que aparezca con una transicion*/
+    display: flex;
+    align-items: center;
+}
+
+.fas{
+    position: absolute;
+    margin: 0 0 0 0.5rem;
+    cursor: pointer;
+}
+
+.fas-error{
+    color: rgb(255, 255, 255);
+}
+
+.user{
+    /*que aparezca con una transicion*/
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: .5rem;
+}
+
+.error{
+    transition: all 0.6s ease;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    background-color: rgb(255, 128, 134);
+}
+
+.error-message{
+    /*poner encima del error*/
+    position: absolute;
+    margin: -5rem 0 0 0;
+    color: rgb(255, 128, 134);
+    font-size: 0.8rem;
+}
+
+.check{
+    transition: all 0.6s ease;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    background-color: rgb(244, 250, 255);    
+}
+
+.btn-primary{
+    transition: all 0.3s ease;
+    display: block;
+    width: 10rem;
+    padding: 1rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #474747;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    transition: all 0.3s ease;
+    background-color: #000;
+}
+
+.olvidaste{
+    text-align: right;
+    font-size: .9rem;
+    margin: 0 0 1rem 0;
+    color: #929292;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    color: #929292;
+    font-weight: 500;
+}
+
+.sing{
+    color: #762b94;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #929292;
+    font-size: .9rem;
+    margin: 1rem;
+}
+
+/*chekbox diseño*/
+[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
