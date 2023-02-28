@@ -15,7 +15,7 @@ const Formulario = () => {
         <div className='card-form'>
             <Formik
             //iniciar los valores del formulario
-            initialValues={{ nombre: '', email: '', password: '' }}
+            initialValues={{ nombre: '', email: '', password: '', terminos: false }}
 
             //validar los valores del formulario 
             validate={(values) => {
@@ -103,7 +103,8 @@ const Formulario = () => {
                         <div>
                             <label className="terms">Acepto los términos y condiciones
                                 <Field 
-                                type="checkbox" name="acepto"  
+                                type="checkbox" 
+                                name="terminos"  
                                 className="check" />                                
                             </label>
                         </div>

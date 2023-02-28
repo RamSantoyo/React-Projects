@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="container">
       <Titulo nombre="Sing In" />
-      <Formulario />
+      <div className="cnt-form">        
+        <Formulario />
+      </div>
     </div>
   );
 }
