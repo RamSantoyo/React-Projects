@@ -1,38 +1,130 @@
-.App {
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  transition: 0.5s;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+img:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+label{
+  margin: 1rem 0;
+  padding-right: .5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.buscador-head{
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: black;
+  color: white;
+}
+.contenedor{
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+.contenedor-buscar{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.inputbuscar{
+  width: 100%;
+  padding: .5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+
+.error{
+  position: absolute;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: .5rem 10rem;
+  border-radius: .5rem;
+  margin: 3.5rem 10rem;
+}
+
+.btn{
+  padding: .5rem 1rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: .5rem;
+  background-color: #e9e9e9;
+  color: #000000;
+  cursor: pointer;
+}
+
+.photos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem 0;
+}
+
+.imagen-ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.spinner-border{
+  width: 10rem;
+  height: 10rem;
+  margin-top: 15%;
+  margin-left: 45%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*media queries*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 768px){
+  .buscador-head{
+    flex-direction: column;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .contenedor-buscar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;    
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .error{
+    position: absolute;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: .5rem 10rem;
+    border-radius: .5rem;
+    margin: 1rem;
+  }
+
+  .spinner-border{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 50%;
+    margin-left: 27%;
+    text-align: center;
   }
 }
